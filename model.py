@@ -32,7 +32,7 @@ class AndModel:
     def step_function(self, x):
         return 1 if x >= 0 else 0
     
-    def predict(self, input_data):
+    def predict(self, input_data): #서버에서 노출하고싶은 모델의 기능
         total_input = np.dot(input_data, self.weights) + self.bias
         return self.step_function(total_input)    
     

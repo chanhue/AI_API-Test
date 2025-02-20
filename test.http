@@ -1,0 +1,3 @@
+POST https://cautious-palm-tree-555p6qq5p5x375v9-8000.app.github.dev/train
+###
+GET https://cautious-palm-tree-555p6qq5p5x375v9-8000.app.github.dev/predict/left/0/right/0
