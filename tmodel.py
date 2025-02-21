@@ -37,3 +37,9 @@ class Xormodel(nn.Module):
             input = torch.tensor(input, dtype=torch.float32)
             predictions = self(input).round()
             return int(predictions.squeeze().tolist())
+        
+    def save(self):
+        torch.save(self.state_dict(), "xormodel.pth")
+
+    def load(self):
+        self.load_state_dict(torch.load("xormodel.pth"))

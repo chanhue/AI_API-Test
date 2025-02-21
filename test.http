@@ -14,3 +14,6 @@ POST https://cautious-palm-tree-555p6qq5p5x375v9-8000.app.github.dev/xtrain
 ###
 GET https://cautious-palm-tree-555p6qq5p5x375v9-8000.app.github.dev/xor/left/0/right/1
 ###
+POST https://cautious-palm-tree-555p6qq5p5x375v9-8000.app.github.dev/save
+###
+POST https://cautious-palm-tree-555p6qq5p5x375v9-8000.app.github.dev/load

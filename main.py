@@ -60,6 +60,16 @@ def predict_xor(left: int, right: int):
     return {"result": result}
 
 @app.post("/xtrain")
-def train_not():
+def train_xor():
     xormodel.train()
+    return {"result": "OK"}
+
+@app.post("/save")
+def save_xor():
+    xormodel.save()
+    return {"result": "OK"}
+
+@app.post("/load")
+def load_xor():
+    xormodel.load()
     return {"result": "OK"}
