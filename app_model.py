@@ -17,8 +17,8 @@ class AppModel:
     return self.model.invoke([HumanMessage(message)])
 
   def get_prompt_response(self, language, message):
-      prompt = self.prompt_template.invoke({"language": language, "text": message})
-      return self.model.invoke(prompt)
+    prompt = self.prompt_template.invoke({"language": language, "text": message})
+    return self.model.invoke(prompt)
   
   def get_streaming_response(self, messages):
     return self.model.stream(messages)
